@@ -5,24 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>circle</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <svg height="100" width="100">
-      <circle
+    <div class="graphic">
+      <svg height="400" width="400">
+        <!-- <circle
         cx="50"
         cy="50"
         r="40"
         stroke="blue"
         stroke-width="3"
         fill="blue"
-      />
-      <line
-        x1="0"
-        y1="0"
-        x2="200"
-        y2="200"
-        style="stroke: rgb(255, 0, 0); stroke-width: 2"
-      />
+      /> -->
+        <line
+          x1="10"
+          y1="0"
+          x2="10"
+          y2="200"
+          style="stroke: black; stroke-width: 4"
+        />
+        <text x="20" y="220" fill="black">График</text>
+        <line
+          x1="200"
+          y1="200"
+          x2="10"
+          y2="200"
+          style="stroke: black; stroke-width: 4"
+        />
+        <!-- <text x="-10" y="10" fill="black" transform="rotate(-5 -50,-90)">Вертикальная линия</text> -->
+        <polyline
+          points="10,200 30,100 60,40 80,120 120,140 200,180"
+          style="fill: none; stroke: red; stroke-width: 3"
+        />
+        <polyline
+          points="10,200 40,180 80,80 120,100 150,140 200,120"
+          style="fill: none; stroke: green; stroke-width: 3"
+        />
+      </svg>
+    </div>
+    <div class="lines">
+    <svg height="380" width="300">
+      <g fill="none">
+        <path stroke="red" d="M5 20 l215 10" />
+        <path stroke="black" d="M5 40 l215 -10" style="stroke-width: 2"/>
+        <path stroke="blue" d="M5 40 l215 10" />
+        <path stroke="black" d="M5 60 l215 -10" />
+        <path stroke="blue" d="M5 60 l215 10" style="stroke-width: 2"/>
+        <path stroke="black" d="M5 80 l215 -10" />
+        <path stroke="blue" d="M5 80 l215 10" />
+        <path stroke="red" d="M5 100 l215 10" style="stroke-width: 2"/>
+        <path stroke="black" d="M5 100 l215 -10" />
+        <path stroke="blue" d="M5 120 l215 10" />
+        <path stroke="black" d="M5 120 l215 -10" style="stroke-width: 2"/>
+        <path stroke="blue" d="M5 140 l215 10" />
+        <path stroke="black" d="M5 140 l215 -10" />
+      </g>
     </svg>
+    </div>
   </body>
 </html>
